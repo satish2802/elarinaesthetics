@@ -1279,6 +1279,66 @@ nav.navbar {
     color: #000;
 }
 
+/* --- Mobile: right white strip / horizontal overflow (Safari, narrow viewports) --- */
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+.container-fluid.position-relative.p-0 {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+.header-carousel {
+    overflow: hidden;
+    max-width: 100%;
+}
+.header-carousel.owl-carousel .owl-stage-outer {
+    overflow: hidden !important;
+}
+
+@media (max-width: 767.98px) {
+    /* Decorative lines use negative margins and can widen scroll width */
+    .section-title .sub-style::before,
+    .section-title .sub-style::after,
+    .section-title .sub-title::before,
+    .section-title .sub-title::after,
+    .testimonial .section-title .sub-style::before,
+    .testimonial .section-title .sub-style::after,
+    .testimonial .section-title .sub-title::before,
+    .testimonial .section-title .sub-title::after {
+        display: none !important;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .header-carousel .display-1 {
+        font-size: 1.85rem !important;
+        line-height: 1.2;
+    }
+
+    .header-carousel .carousel-caption-content h5 {
+        letter-spacing: 1px !important;
+    }
+
+    .logo-main {
+        font-size: 1.35rem !important;
+        letter-spacing: 1px !important;
+        word-spacing: normal !important;
+    }
+
+    .logo-sub {
+        font-size: 10px !important;
+        letter-spacing: 2px !important;
+    }
+}
+
 
 
 
